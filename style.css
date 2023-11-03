@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #84c6f5;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #00243d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a {
+    font-size: 20px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 45px;
+    transition: .4s;
+}
+
+nav a:hover,
+nav a.active{
+    color: #7ddaff;
+    background-color: #0163a8;
+    background: #00243d;
+    border: #0163a8;
+    border-radius: 50%;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background-color: #003d69;
+    color: white;
+    font-weight: 700;
+}
+
+section:nth-child(odd){
+    background-color: #0163a8;
+}
+
+.home-content {
+    text-align: left;
+    max-width: 600px;
+    align-items: center;
+}
+
+.home content img{
+    justify-content: right;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 600;
+    color: aquamarine;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0;
+    font-weight: 400;
+}
+.img-content {
+    width: 80%;
+    position: relative;
+    margin-left: 120px;
+}
+.img-content::after{
+    content: '';
+    position: absolute;
+    background-color: #84c6f5;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    top: 20%;
+    left: 24%;
+}
+
+.img-content img{
+    width: 100%;
+}
+
+.contact {
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid #7ddaff;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #7ddaff;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.contact a:hover{
+    color: #003d69;
+}
+
+.contact a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%; 
+    height: 100%;
+    background: #7ddaff;
+    z-index: -1;
+    transition: .5s;
+}
+
+.contact a:hover::before {
+    width: 100%;
+}
+
+.aboutme {
+    text-align: left;
+    max-width: 800px;
+    
+}
+
+.aboutme h1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.aboutme p,li {
+    font-weight: 400;
+}
+
+
+.aboutmyself {
+    text-align: left;
+    max-width: 800px;
+    margin-left: 30px;   
+}
+
+
+
+
+
+
+
+
+
+
+    
